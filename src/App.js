@@ -32,7 +32,6 @@ function App() {
           <Route path="/Editproduct" component={Editproduct} />
         </Switch>
         <Footer />
-        <Productpage />
       </Router>
     </>
   );
