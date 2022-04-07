@@ -26,6 +26,11 @@ function SignUp() {
                                 <label for="exampleInputName" class="form-label">First Name</label>
                                 <input type="text" className="form-control" placeholder="First name" aria-label="First name" />
                             </div>
+
+                            <div class="col mb-2">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            </div>
                         </div>
                         <div class="col-sm-6">
                             <div className="col">
@@ -33,11 +38,8 @@ function SignUp() {
                                 <input type="text" className="form-control" placeholder="Last name" aria-label="Last name" />
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        </div>
                         <b>Login Information</b>
+                        <br></br>
                         <hr></hr>
                         <div class="col-sm-6">
                             <div class="mb-3">

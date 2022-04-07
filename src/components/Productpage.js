@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Search from "./Search";
+import { useHistory } from 'react-router-dom';
 
-function Productpage() {
+const Productpage = (props) => {
+  const history = useHistory();
+
   return (
     <>
       <div className="text-center" style={{ margin: "5px" }}>
         <b>Product page</b>
       </div>
 
-      <form className="d-flex" style={{ margin: "5px", padding: "5px", justifyContent: "right" }}>
-        <input className="form-control me-2 pull-right " style={{ width: "300px" }} type="search" placeholder="Search..." aria-label="Search" />
-        <button className="btn btn-outline-danger" type="submit">Add Product</button>
-      </form>
-
       <div className="container" style={{ alignItems: "center" }}>
+
+        <form className="d-flex" style={{ margin: "5px", padding: "5px", justifyContent: "right" }}>
+          <input className="form-control me-2 pull-right " style={{ width: "300px" }} type="search" placeholder="Search..." aria-label="Search" />
+          <button className="btn btn-outline-danger" type="submit">Add Product</button>
+        </form>
         <table className="table table-hover">
           <thead>
             <tr>
@@ -32,7 +32,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td style={{ alignContent: "right" }}>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -42,7 +42,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -52,7 +52,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -62,7 +62,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -72,7 +72,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -82,7 +82,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>
@@ -92,7 +92,7 @@ function Productpage() {
               <td>Data Source 1</td>
               <td>Teste</td>
               <td>
-                <button className="btn btn-outline-success" type="submit">Edit</button>
+                <button className="btn btn-outline-success" onClick={() => history.push('/Editproduct')} type="submit">Edit</button>
                 <button className="btn btn-outline-danger mx-2" type="submit">Delete</button>
               </td>
             </tr>

@@ -11,7 +11,7 @@ function Search() {
           <form className="d-flex">
             <input className="form-control me-2" type="search" placeholder="What are you looking for..." aria-label="Search" />
 
-            <Link to="/" className="nav-link" aria-current="page"
+            <Link to="#" className="nav-link" aria-current="page"
               style={{
 
                 width: "129px",
@@ -24,7 +24,7 @@ function Search() {
             >
               Search
             </Link>
-            <Link to="/" className="nav-link mx-2" aria-current="page"
+            <Link to="#" className="nav-link mx-2" aria-current="page"
               style={{
 
                 width: "129px",
